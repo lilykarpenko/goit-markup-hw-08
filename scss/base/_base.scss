@@ -1,0 +1,11 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color);
+    background-color: var(--primery-fons-color);
+    @media(min-width:780px){
+    padding-top: 80px;}
+  }
+  

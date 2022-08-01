@@ -1,0 +1,22 @@
+.footer-nav{
+&__list{
+    min-width: 231px;
+    margin-top: 20px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__linc{
+    color: var(--contacts-footer-color);
+    transition: color 250ms var(--cubic-bezier);
+    line-height: 1.71;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    &:hover, &:focus{
+      color: var(--blu-color);
+    }
+  }
+  &__linc--address {
+    color: var(--white-text);
+  }
+}

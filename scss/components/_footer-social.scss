@@ -1,0 +1,31 @@
+.footer{
+&__social-item {
+    flex-basis: calc(25% - 10px);
+    max-width: 44px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--cubic-bezier), 
+    fborder-radius 250ms var(--cubic-bezier);
+    &:hover{
+      background-color: var(--blu-color);
+      border-radius: 50%;
+    }}
+  &__social-linc{
+     display: flex;
+    align-items: center;
+      width: 44px;
+      height: 44px;
+     
+  }
+  &__social-linc:focus{
+    background-color: var(--blu-color);
+    border-radius: 50%;}
+  &__social-icon {
+      max-width: 44px;
+      fill: var(--white-text);
+    }
+  }
+  
+
+  

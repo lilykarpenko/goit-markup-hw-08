@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+    background-color: var(--primery-fons-color);
+    border-bottom: 1px solid var(--border-color);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+      @media(min-width:768px){
+        position:fixed;
+        }
+   
+    &__inner {
+      display: flex;
+      position: relative;
+      
+      @media(max-width:768px){
+      height: 60px;
+      
+      }
+    }
+}
+  
+  

@@ -1,0 +1,56 @@
+.menu {
+  &__desktop{
+    display: none;
+
+    @media (min-width: 768px){
+      display: block;
+    }
+}
+    display: flex;
+    align-items: center;
+
+    &__list {
+        
+    @media(min-width: 768px){
+      
+      margin-left: 88px;
+      margin-right: 90px;}
+
+    @media(min-width: 1199px){
+      margin-left: 92px;
+    }
+      display: flex;
+      margin-left: 93px;
+    }
+    &__item{
+      margin-right: 50px;
+    }
+    &__item:last-child {
+      margin-right: 0;}
+    &__linc{
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        &:focus, &:hover{color: var(--blu-color);}
+    }
+    
+    &__linc--active {
+      color: var(--blu-color);
+      position: relative;
+    }
+    
+    &__linc--active::after {
+      content: "";
+      height: 4px;
+      width: 100%;
+      display: block;
+      background-color: var(--blu-color);
+      border-radius: 2px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      @media(max-width: 768px){
+        display: none;
+      }
+    }
+}

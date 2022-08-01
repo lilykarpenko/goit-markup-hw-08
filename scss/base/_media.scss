@@ -1,0 +1,81 @@
+@media(min-width: 480px){
+      
+};
+@media(min-width: 768px){
+};
+@media(min-width: 1200px){
+}
+
+
+/* Применится когда ширина вьюпорта больше чем 900px */
+@media (min-width: 900px) {
+    body {
+      background-color: green;
+    }
+  }
+  
+  /* Применится когда ширина вьюпорта меньше чем 600px */
+  @media (max-width: 600px) {
+    body {
+      background-color: yellow;
+    }
+  }
+   // до 600px фон <body> будет желтого цвета, а после 900px - зелёного. 
+  //В промежутке от 601px до 899px - цвет белый,
+  // значение указанное по умолчанию, потому что ни один медиа-запрос не подойдёт.
+  // <img srcset="
+  // ./img/img-1.jpg 1x,
+  // ./img/img-1@2x.jpg 2x
+  // "
+  // src="./img/img-1.jpg" 
+  // alt="Николай Тарасов" width="270"
+  // sizes="(min-widh:1199) 25vw, (min-widh:768) 50vw, (min-widh:1199) 100vw,"
+  // />
+
+
+
+
+  
+
+  // <picture>
+  //      <source srcset="./img/img-1@.webp 1x, ./img/img-1@2x.webp 2x" type="image/webp">
+  //      <source srcset="./img/img-1@2x.jpg 2x" type="image/jpg">
+  //      <img class="team__image" src="./img/img-1.jpg" alt="Николай Тарасов">
+  // </picture>
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header-mobile.jpg");
+//   @media(min-resolution: 2dppx){
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header-mobile@2x.jpg");
+//  }
+
+//    @media(min-width: 768px){
+//    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/heder-tablet.jpg");
+//    @media(min-resolution: 2dppx){
+//      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header-tablete@2x.jpg");}
+//  }
+//      @media(min-width: 1199px){
+//        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/heder.jpg");
+//      @media(min-resolution: 2dppx){
+//          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header@2x.jpg");}
+//   }
+
+// <picture>
+//     <source srcset="./img/img-2.webp 270w, ./img/img-2@2x.webp 540w" 
+//     type="image/webp">
+//     <img srcset="
+
+//     ./img/img-2-270.jpg 270w, 
+//     ./img/img-2-270@2x.jpg 540w,
+
+//     ./img/img-2-354.jpg 450w, 
+//     ./img/img-2-354@2x.jpg 708w,
+
+//     ./img/img-2-450.jpg 450w, 
+//     ./img/img-2-450@2x.jpg 900w
+//     "
+    
+//     src="./img/img-2-270.jpg" 
+//     alt="техпорядок"
+//     sizes="(min-widh:1199px) 25vw, (min-widh:768px) 50vw, (min-widh:480px) 100vw" />
+// </picture>
+
+

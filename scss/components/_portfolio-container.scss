@@ -1,0 +1,25 @@
+.portfolio-cection {
+    padding-top: 83px;
+    padding-bottom: 99px;
+  }
+  .portfolio__list-button {
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    @media(max-width: 767px){
+      max-width: 350px;
+
+    }
+
+    @media(min-width: 767px){
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    @media(min-width: 1199px){
+      margin-bottom: 50px;
+    }
+  }
+  
+  .portfolio__item-button:not(:first-child){
+    margin-left: 8px;
+  }

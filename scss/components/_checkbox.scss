@@ -1,0 +1,59 @@
+.checkbox, .checkbox__control{
+  @extend %flex-centered;
+}
+.checkbox {
+    margin-bottom: var(--card-set-gap);
+  
+  
+  &__imput {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  &__control {
+    width: 16px;
+    height: 15px;
+    background-color: var(--primery-text-color);
+    margin-right: 8.5px;
+    border-radius: 4px;
+  }
+  
+  &__imput:checked +&__icon  {
+    background-color: var(--blu-color);
+    background-origin: border-box;
+    width: 16px;
+    height: 15px;
+    border-radius: 4px;
+    border: 2px solid var(--blu-color);
+  }
+  
+  &__icon {
+    background-color:var(--primery-fons-color);
+    width: 11px;
+    height: 11px;
+    fill: var(--primery-fons-color);
+    background-origin:border-box;
+  }
+  
+  &__text {
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    @media(max-width:1199px){
+    line-height: 1.16;
+    font-size: 12px;
+}
+    line-height: 1.71;
+
+  }
+  &__link {
+    text-decoration: underline;
+    color: var(--blu-color);
+    letter-spacing: 0.03em;
+    @media(max-width:1199px){
+      line-height: 1.16;
+      font-size: 12px;
+  }
+    line-height: 1.71;
+  }}

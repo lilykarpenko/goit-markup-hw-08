@@ -1,0 +1,35 @@
+.team__container-social {
+    padding-left: var(--card-set-gap);
+    padding-right: var(--card-set-gap);
+  }
+  
+  .social__list {
+    display: flex;
+    margin-left: -10px;
+    justify-content: center;
+  }
+  
+  .social__item {
+    margin-left: 10px;
+  }
+  
+  .team__social-linc {
+    @extend %flex-centered;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms var(--cubic-bezier);
+    &:focus, &:hover{
+      background-color: var(--blu-color);
+    }
+  }
+  
+  .team__social-icon {
+    fill: var(--icon-color);
+    width: 20px;
+    height: 20px;
+    transition: fill 250ms var(--cubic-bezier);
+    .team__social-linc:hover &, .team__social-linc:focus &{
+      fill: var(--white-text);
+    }
+  }

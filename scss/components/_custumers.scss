@@ -1,0 +1,52 @@
+.customers {  
+  &__list {
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width:480px){
+    margin-left: -30px;
+  }
+    @media screen and (min-width :1199px){
+      margin-top: 50px;
+    }
+  }
+  &__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    @media screen and (min-width:768px){
+           width: calc((100% - 90px)/3);
+    }
+
+    @media screen and (min-width:1200px){
+    flex-basis: calc(16.6666666667% - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+  }}
+  
+  &__linc {
+    @extend %flex-centered;
+    border: 1px solid var(--icon-color);
+    border-radius: 4%;
+    width: 210px;
+    height: 92px;
+    @media screen and (min-width:481px){
+    }
+    @media screen and (min-width:1200px){
+      width: 170px;
+      height: 92px; 
+    }
+    transition: border 250ms var(--cubic-bezier);
+    &:hover, &:focus{
+      border: 1px solid var(--blu-color);
+    }
+  }
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-color);
+    transition: fill 250ms var(--cubic-bezier);
+    .customers__linc:hover &,.customers__linc:focus &{
+      fill: var(--blu-color);
+    }
+  }
+}
