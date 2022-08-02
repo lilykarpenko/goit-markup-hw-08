@@ -23,29 +23,33 @@
                     </svg> 
                 </button>
                     <div class="menu-container is-open is-hidden " id="menu-container" data-mobaile-menu>
-                        <nav class="mobail-menu">
-                            <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-mobaile-menu-close>
-                            <svg width="40px" height="40px"  aria-label="переключатель мобильного меню">
-                            <use class="icon-cross" href="./img/icons/icons.svg#icon-menu-close"></use>  
-                            </svg> 
-                            </button>
-                                <ul class=" mobail-menu__list">
-                                    <li class="mobail-menu__item">
-                                        <a class="mobail-menu__linc menu__linc--active" href="./index.html">Студія</a></li>
-                                    <li class="mobail-menu__item ">
-                                        <a class="mobail-menu__linc" href="./portfolio.html">Портфоліо</a></li>
-                                     <li class="mobail-menu__item ">
-                                        <a class="mobail-menu__linc" href="#">Контакти</a></li>
-                                </ul>
+                        <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-mobaile-menu-close>
+                        <svg width="40px" height="40px"  aria-label="переключатель мобильного меню">
+                        <use class="icon-cross" href="./img/icons/icons.svg#icon-menu-close"></use>  
+                        </svg> 
+                        </button>
+                        <div class="menu-box">
+                            <div class="menu-box__iner">
+                                <nav class="mobail-menu">
+                                    <ul class=" mobail-menu__list">
+                                        <li class="mobail-menu__item">
+                                            <a class="mobail-menu__linc menu__linc--active" href="./index.html">Студія</a></li>
+                                        <li class="mobail-menu__item ">
+                                            <a class="mobail-menu__linc" href="./portfolio.html">Портфоліо</a></li>
+                                         <li class="mobail-menu__item ">
+                                            <a class="mobail-menu__linc" href="#">Контакти</a></li>
+                                    </ul>
+                            </nav>
+                            <div class="menu-box__contacts">
                                 <ul class="mobail-contacts__list">
-                                        <li class="mobail-contacts__item mobail-contacts__phone"> 
-                                            <a class="mobail-contacts__linc mobail-contacts__linc--large" href="tel:+380961111111">
-                                             +38 096 111 11 11</a>
-                                        </li>   
-                                        <li class="mobail-contacts__item">
-                                            <a class="mobail-contacts__linc" href="mailto:info@devstudio.com">
-                                            info@devstudio.com</a>
-                                        </li>
+                                    <li class="mobail-contacts__item mobail-contacts__phone"> 
+                                        <a class="mobail-contacts__linc mobail-contacts__linc--large" href="tel:+380961111111">
+                                         +38 096 111 11 11</a>
+                                    </li>   
+                                    <li class="mobail-contacts__item">
+                                        <a class="mobail-contacts__linc" href="mailto:info@devstudio.com">
+                                        info@devstudio.com</a>
+                                    </li>
                                 </ul>
                                 <ul class="menu-social">
                                     <li class="menu-social__item">
@@ -61,7 +65,9 @@
                                         <a class="menu-social__name" href="#">LinkedIn</a>
                                     </li>
                                 </ul>
-                        </nav>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 <nav class="menu__desktop menu">
                     <ul class=" menu__list">
@@ -71,9 +77,9 @@
                         <a class="menu__linc" href="./portfolio.html">Портфоліо</a></li>
                     <li class="menu__item ">
                         <a class="menu__linc" href="#">Контакти</a></li>
+                    </ul>
                 </nav>
-            </ul>
-<!--eder-contacts-->
+<!--heder-contacts-->
             <div class="contacts contacts__desktop">
                 <ul class="contacts__list">
                     <li class="contacts__item">

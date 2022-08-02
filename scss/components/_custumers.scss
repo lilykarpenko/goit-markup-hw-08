@@ -29,11 +29,11 @@
     border-radius: 4%;
     width: 210px;
     height: 92px;
-    @media screen and (min-width:481px){
+    @media screen and (min-width:767px){
+      width: 226px;
     }
     @media screen and (min-width:1200px){
       width: 170px;
-      height: 92px; 
     }
     transition: border 250ms var(--cubic-bezier);
     &:hover, &:focus{

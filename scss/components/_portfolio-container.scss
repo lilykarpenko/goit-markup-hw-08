@@ -1,13 +1,25 @@
 .portfolio-cection {
+  padding-top: 120px;
+    padding-bottom: 60px;
+
+    @media(min-width: 768px){
+      padding-top: 60px; 
+    }
+  @media(min-width: 1199px){
     padding-top: 83px;
-    padding-bottom: 99px;
+    padding-bottom: 99px;}
   }
   .portfolio__list-button {
+
+
     display: flex;
     margin-bottom: 40px;
     flex-wrap: wrap;
+   
+
     @media(max-width: 767px){
       max-width: 350px;
+      margin-top: -15px;
 
     }
 
@@ -20,6 +32,13 @@
     }
   }
   
+  
   .portfolio__item-button:not(:first-child){
     margin-left: 8px;
+  }
+
+  .portfolio__item-button{
+    @media(max-width: 767px){
+      margin-top: 15px;
+    }
   }
