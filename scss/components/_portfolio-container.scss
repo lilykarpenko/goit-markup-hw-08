@@ -19,7 +19,7 @@
 
     @media(max-width: 767px){
       max-width: 350px;
-      margin-top: -15px;
+      // margin-top: -15px;
 
     }
 
@@ -30,15 +30,16 @@
     @media(min-width: 1199px){
       margin-bottom: 50px;
     }
+    @media(max-width: 767px){
+    row-gap: 15px;
+    column-gap: 8px;}
   }
   
   
-  .portfolio__item-button:not(:first-child){
-    margin-left: 8px;
-  }
+  
 
   .portfolio__item-button{
     @media(max-width: 767px){
-      margin-top: 15px;
+      // margin-top: 15px;
     }
   }

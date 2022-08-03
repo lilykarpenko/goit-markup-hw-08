@@ -34,25 +34,19 @@
       height: 18px;
       transform: translateY(-50%);
       transition: fill 250ms var(--cubic-bezier);
+      .form-fild__input:hover + &, 
+    .form-fild__input:focus + &{
+      fill: var(--blu-color);
+    }
     }
     
-    &__input::-moz-placeholder {
-      color: rgba(117, 117, 117, 0.5);
-    }
     
-    &__input::-ms-input-placeholder {
-      color: rgba(117, 117, 117, 0.5);
-    }
     
     &__input::placeholder {
       color: rgba(117, 117, 117, 0.5);
     }
     
-    &__input:hover + .checkbox__icon,
-     &__inputt:focus + .checkbox__icon {
-      fill: var(--blu-color);
-    }
-    
+   
     &__comment {
       margin-bottom: 20px;
     }
@@ -60,3 +54,5 @@
       padding-left: 12px;
     }
   }
+
+  
