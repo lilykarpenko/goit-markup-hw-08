@@ -187,6 +187,12 @@ body {
   }
 }
 
+.comtainer-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu-button {
   position: absolute;
   top: 10px;
@@ -243,15 +249,19 @@ body {
   margin-bottom: 32px;
 }
 .mobail-menu__item:last-child {
-  margin-bottom: 306px;
+  margin-bottom: 0;
 }
 
 .menu-box {
+  display: flex;
+  width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
   padding: 48px 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu-box__iner {
   display: -webkit-box;

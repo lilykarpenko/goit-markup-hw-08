@@ -16,18 +16,20 @@
  <!--heder-nav-->
         <div class=" container header__inner">
             <a class="logo" href="#">Web<span class="logo--accent">Studio</span></a>
-                <button type="button" class="menu-button is-open"aria-expanded="false"aria-controls="menu-container"
+                    <button type="button" class="menu-button is-open"aria-expanded="false"aria-controls="menu-container"
                             data-mobaile-menu-open>
                     <svg  width="40px" height="40px" aria-label="переключатель мобильного меню">
                     <use class="icon-open" href="./img/icons/icons.svg#icon-menu"></use>
                     </svg> 
                 </button>
                     <div class="menu-container is-open is-hidden " id="menu-container" data-mobaile-menu>
+                        
                         <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-mobaile-menu-close>
                         <svg width="40px" height="40px"  aria-label="переключатель мобильного меню">
                         <use class="icon-cross" href="./img/icons/icons.svg#icon-menu-close"></use>  
                         </svg> 
                         </button>
+                   
                         <div class="menu-box">
                             <div class="menu-box__iner">
                                 <nav class="mobail-menu">
@@ -197,23 +199,29 @@
                 <ul class="team__list">
                     <li class="team__item">
                            <div class="card-tumb">
-                            <picture>
-                                <source srcset="./img/img-3.webp 270w, ./img/img-3@2x.webp 540w" 
-                                type="image/webp">
-                                <img srcset="
-                                ./img/img-3-270.jpg 270w, 
-                                ./img/img-3-270@2x.jpg 540w,
                             
-                                ./img/img-3-354.jpg 450w, 
-                                ./img/img-3-354@2x.jpg 708w,
-                            
-                                ./img/img-3-450.jpg 450w, 
-                                ./img/img-3-450@2x.jpg 900w
-                                "
-                                src="./img/img-3-270.jpg" 
-                                alt="фото Ігор Дем'яненко"
-                                sizes="(min-widh:1199px) 25vw, (min-widh:768px) 50vw, (min-widh:480px) 100vw" />
-                            </picture>
+                                <picture>
+                                    <source srcset="
+                                    ./img/img-3-270.jpg 1x, 
+                                    /img/img-3-270@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                                    <source srcset="/img/img-3-354.jpg 1x, 
+                                    /img/img-3-354@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+
+                                    <source srcset="/img/img-3-450.jpg 1x, 
+                                    /img/img-3-450@2x.jpg 2x"
+                                    media="(min-width: 767px)"
+                                    >
+                                    
+                                    <img 
+                                    src="./img/img-3-270.jpg"
+                                    alt="фото Ігор Дем'яненко"
+                                    />
+                                    
+                                </picture>
+                               
                            </div>
                         <div class="card-description">
                             <div class="team__card">
@@ -257,21 +265,22 @@
                     <li class="team__item">
                         <div class="card-tumb">
                             <picture>
-                                <source srcset="./img/img-2.webp 270w, ./img/img-2@2x.webp 540w" 
-                                type="image/webp">
-                                <img srcset="
-                                ./img/img-2-270.jpg 270w, 
-                                ./img/img-2-270@2x.jpg 540w,
-                            
-                                ./img/img-2-354.jpg 450w, 
-                                ./img/img-2-354@2x.jpg 708w,
-                            
-                                ./img/img-2-450.jpg 450w, 
-                                ./img/img-2-450@2x.jpg 900w
-                                "
-                                src="./img/img-2-270.jpg" 
+                                <source srcset="
+                                ./img/img-2-270.jpg 1x, 
+                                /img/img-2-270@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+
+                                <source srcset="/img/img-2-354.jpg 1x, 
+                                /img/img-2-354@2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+
+                                <source srcset="/img/img-2-450.jpg 1x, 
+                                /img/img-2-450@2x.jpg 2x"
+                                media="(min-width: 767px)">
+                                <img 
+                                src="./img/img-2-270.jpg"
                                 alt="фото Ольга Рєпіна"
-                                sizes="(min-widh:1199px) 25vw, (min-widh:768px) 50vw, (min-widh:480px) 100vw" />
+                                />
                             </picture>
                         </div>
                         <div class="team__card">
@@ -314,21 +323,23 @@
                     <li class="team__item">
                         <div class="card-tumb">
                             <picture>
-                                <source srcset="./img/img-1.webp 270w, ./img/img-1@2x.webp 540w" 
-                                type="image/webp">
-                                <img srcset="
-                                ./img/img-1-270.jpg 270w, 
-                                ./img/img-1-270@2x.jpg 540w,
-                            
-                                ./img/img-1-354.jpg 450w, 
-                                ./img/img-1-354@2x.jpg 708w,
-                            
-                                ./img/img-1-450.jpg 450w, 
-                                ./img/img-1-450@2x.jpg 900w
-                                "
-                                src="./img/img-1-270.jpg" 
+                                <source srcset="
+                                ./img/img-1-270.jpg 1x, 
+                                /img/img-1-270@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+
+                                <source srcset="/img/img-1-354.jpg 1x, 
+                                /img/img-1-354@2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+
+                                <source srcset="/img/img-1-450.jpg 1x, 
+                                /img/img-1-450@2x.jpg 2x"
+                                media="(min-width: 767px)">
+                                <img 
+                                src="./img/img-1-270.jpg"
+                               
                                 alt="фото Микола Тарасов"
-                                sizes="(min-widh:1199px) 25vw, (min-widh:768px) 50vw, (min-widh:480px) 100vw" />
+                                />
                             </picture>
                         </div>
                         <div class=" team__card">
@@ -370,22 +381,21 @@
                     </li>
                     <li class="team__item">
                         <div class="card-tumb">
-                            <picture>
-                                <source srcset="./img/img.webp 270w, ./img/img@2x.webp 540w" 
-                                type="image/webp">
-                                <img srcset="
-                                ./img/img-270.jpg 270w, 
-                                ./img/img-270@2x.jpg 540w,
-                            
-                                ./img/img-354.jpg 450w, 
-                                ./img/img-354@2x.jpg 708w,
-                            
-                                ./img/img-450.jpg 450w, 
-                                ./img/img-450@2x.jpg 900w
-                                "
-                                src="./img/img-270.jpg" 
-                                alt="Михайло Єрмаков"
-                                sizes="(min-widh:1199px) 25vw, (min-widh:768px) 50vw, (min-widh:480px) 100vw" />
+                            <source srcset="
+                                ./img/img-270.jpg 1x, 
+                                /img/img-270@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+
+                                <source srcset="/img/img-354.jpg 1x, 
+                                /img/img-354@2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+
+                                <source srcset="/img/img-450.jpg 1x, 
+                                /img/img-450@2x.jpg 2x"
+                                media="(min-width: 767px)">
+                                <img 
+                                src="./img/img-270.jpg"
+                                alt="Михайло Єрмаков"/>
                             </picture>
                         </div>
                         <div class="team__card">
