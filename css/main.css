@@ -123,6 +123,7 @@ body {
   .text {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -149,7 +150,7 @@ body {
   }
 }
 
-.checkbox, .checkbox__control, .modal__close-button, .customers__linc, .team__social-linc, .picture__overlay, .benefits-inner {
+.checkbox, .checkbox__control, .modal__close-button, .customers__linc, .team__social-linc, .picture .picrure__overlay, .benefits-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,7 +453,7 @@ body {
             flex-direction: column;
   }
 }
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
   .contacts__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -729,7 +730,7 @@ body {
   text-transform: uppercase;
   color: var(--white-text);
 }
-.picture__overlay {
+.picture .picrure__overlay {
   bottom: 0;
   width: 370px;
   height: 70px;
@@ -756,7 +757,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .team__list {
-    margin-top: 50px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 }
@@ -876,7 +877,7 @@ body {
 }
 @media screen and (min-width: 1199px) {
   .customers__list {
-    margin-top: 50px;
+    margin-top: -30px;
   }
 }
 .customers__item {
@@ -978,6 +979,15 @@ body {
   }
 }
 
+@media (min-width: 767px) {
+  .portfolio__item-button {
+    margin-left: 8px;
+  }
+  .portfolio__item-button:first-child {
+    margin-left: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .card-set__list {
     margin-top: -30px;
@@ -1048,7 +1058,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--primery-text-color);
 }
 .product__text {

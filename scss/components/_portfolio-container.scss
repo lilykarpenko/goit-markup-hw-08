@@ -26,6 +26,7 @@
     @media(min-width: 767px){
       justify-content: center;
       margin-bottom: 30px;
+      
     }
     @media(min-width: 1199px){
       margin-bottom: 50px;
@@ -39,7 +40,10 @@
   
 
   .portfolio__item-button{
-    @media(max-width: 767px){
-      // margin-top: 15px;
+    @media(min-width: 767px){
+      margin-left: 8px;
+      &:first-child{
+        margin-left: 0;
+      }
     }
   }
